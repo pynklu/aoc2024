@@ -16,6 +16,6 @@ public class SolutionService {
     public String solveAll() {
         return solvers.stream()
                 .map(Solver::getSolution)
-                .collect(Collectors.joining());
+                .collect(Collectors.joining("\n"));
     }
 }
