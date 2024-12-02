@@ -3,7 +3,6 @@ package be.pynklu.aoc2024.solver.day1;
 import be.pynklu.aoc2024.solver.Solver;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Component
