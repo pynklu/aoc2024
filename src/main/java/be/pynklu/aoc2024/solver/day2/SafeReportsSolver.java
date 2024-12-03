@@ -1,7 +1,6 @@
 package be.pynklu.aoc2024.solver.day2;
 
 import be.pynklu.aoc2024.solver.Solver;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

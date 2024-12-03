@@ -14,4 +14,14 @@ public interface Solver {
             throw new RuntimeException("Failed to read file: " + fileName, e);
         }
     }
+
+
+    default String readFile(String fileName) {
+        try {
+            Path path = Path.of(getClass().getClassLoader().getResource(fileName).toURI());
+            return Files.readString(path);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to read file: " + fileName, e);
+        }
+    }
 }

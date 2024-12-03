@@ -1,7 +1,6 @@
 package be.pynklu.aoc2024.solver.day2;
 
 import be.pynklu.aoc2024.solver.Solver;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -9,7 +8,6 @@ import java.util.List;
 import static java.util.Arrays.stream;
 
 @Component
-@Primary
 public class DankReportSolver implements Solver {
     @Override
     public String getSolution() {
