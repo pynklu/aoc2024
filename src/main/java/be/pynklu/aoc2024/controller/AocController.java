@@ -21,4 +21,9 @@ public class AocController {
     public String allSolutions() {
         return solutionService.solveAll();
     }
+
+    @GetMapping("/today")
+    public String today() {
+        return solutionService.solveToday();
+    }
 }

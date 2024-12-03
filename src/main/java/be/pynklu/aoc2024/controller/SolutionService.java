@@ -9,13 +9,19 @@ import java.util.stream.Collectors;
 @Service
 public class SolutionService {
     private final List<Solver> solvers;
-    public SolutionService(List<Solver> solvers) {
+    private final Solver todaySolver;
+    public SolutionService(List<Solver> solvers, Solver todaySolver) {
         this.solvers = solvers;
+        this.todaySolver = todaySolver;
     }
 
     public String solveAll() {
         return solvers.stream()
                 .map(Solver::getSolution)
                 .collect(Collectors.joining("\n"));
+    }
+
+    public String solveToday() {
+        return todaySolver.getSolution();
     }
 }
