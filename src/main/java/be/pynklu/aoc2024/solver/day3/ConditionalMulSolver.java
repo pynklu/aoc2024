@@ -1,14 +1,12 @@
 package be.pynklu.aoc2024.solver.day3;
 
 import be.pynklu.aoc2024.solver.Solver;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Pattern;
 
 @Component
-@Primary
 public class ConditionalMulSolver implements Solver {
     @Override
     public String getSolution() {
